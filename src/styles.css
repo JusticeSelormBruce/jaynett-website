@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+ @import "../node_modules/animate.css/animate.min.css";
+ @import "./assets/Semantic/semantic.css";
+body{
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: 20px;
+    padding: 20px;
+    
+}
+
+.heading{
+    color: gray;
+    padding: 0 !important;
+}

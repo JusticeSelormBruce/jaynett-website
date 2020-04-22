@@ -1,0 +1,131 @@
+<div align="center" style="padding-top:20px;" fxHide.xs fxHide.sm="true"> 
+  
+
+  <h1 class="heading" fxHide.xs>PROJECTS</h1>
+  <h1 class="heading" fxShow.xs fxHide.gt-xs style="font-size:13pt;">PROJECTS</h1>
+  <hr>
+</div>
+
+<mat-card>
+  <mat-card-content>
+    <div align="center">
+      <h1>Latest Projects</h1>
+    </div>
+    
+  </mat-card-content>
+  <mat-card-content>
+    <div align="center">
+        <p> In our portfolio, you can browse the latest products <br>
+            developed for our clients for different corporate purposes.<br>
+            Our qualified team of interface designers and
+             software developers 
+             <br>is always ready to create something unique for
+            you.
+        </p>
+    </div>
+     
+  </mat-card-content>
+
+  <mat-card-content fxHide.gt-xs>
+        <mat-vertical-stepper [linear]="isLinear" #stepper>
+          <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>All</ng-template>
+            
+              <div>
+                <button mat-button matStepperNext>Next</button>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Custom Software</ng-template>
+              
+                <div>
+                  <button mat-button matStepperNext>Next</button>
+                </div>
+              </form>
+            </mat-step>
+            <mat-step [stepControl]="firstFormGroup">
+                <form [formGroup]="firstFormGroup">
+                  <ng-template matStepLabel>Mobile Apps</ng-template>
+                
+                  <div>
+                    <button mat-button matStepperNext>Next</button>
+                  </div>
+                </form>
+              </mat-step>
+          <mat-step [stepControl]="secondFormGroup">
+            <form [formGroup]="secondFormGroup">
+              <ng-template matStepLabel>UI and Design</ng-template>
+             
+              <div>
+              <mat-card>
+                <mat-card-content>
+                  UI and Design
+                </mat-card-content>
+              </mat-card>
+              </div>
+            </form>
+          </mat-step>
+        </mat-vertical-stepper>
+        
+  </mat-card-content>
+  <mat-card-content fxHide.xs="true"> 
+      <mat-horizontal-stepper [linear]="isLinear" #stepper>
+        <mat-step [stepControl]="firstFormGroup">
+          <form [formGroup]="firstFormGroup">
+            <ng-template matStepLabel>All</ng-template>
+          
+            <div>
+                <mat-card>
+                    <mat-card-content>
+                      <p>All</p>
+                    </mat-card-content>
+                  </mat-card>
+            </div>
+          </form>
+        </mat-step>
+        <mat-step [stepControl]="firstFormGroup">
+            <form [formGroup]="firstFormGroup">
+              <ng-template matStepLabel>Custom Software</ng-template>
+            
+              <div>
+                  <mat-card>
+                      <mat-card-content>
+                        <p>Custom Software</p>
+                      </mat-card-content>
+                    </mat-card>
+              </div>
+            </form>
+          </mat-step>
+          <mat-step [stepControl]="firstFormGroup">
+              <form [formGroup]="firstFormGroup">
+                <ng-template matStepLabel>Mobile Apps</ng-template>
+              
+                <div>
+                    <mat-card>
+                        <mat-card-content>
+                          <p>Mobile Apps</p>
+                        </mat-card-content>
+                      </mat-card>
+                </div>
+              </form>
+            </mat-step>
+        <mat-step [stepControl]="secondFormGroup">
+          <form [formGroup]="secondFormGroup">
+            <ng-template matStepLabel>UI and Design</ng-template>
+           
+            <div>
+             <mat-card>
+               <mat-card-content>
+                 <p>UI and Design</p>
+               </mat-card-content>
+             </mat-card>
+            </div>
+          </form>
+        </mat-step>
+      </mat-horizontal-stepper>
+      
+</mat-card-content>
+</mat-card>

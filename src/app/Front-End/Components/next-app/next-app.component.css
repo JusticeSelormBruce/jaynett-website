@@ -1,0 +1,30 @@
+
+ div{
+    background-image: url('../../../../assets/images/binary.jpg');
+    background-size: cover;
+  height:550px;
+color:white;
+margin: 20px;
+  }
+ 
+  button{
+      width:200px;
+     margin: 20px;
+  }
+  h3{
+    margin-right: 20px;
+  }
+  p{
+    margin-right: 20px;
+  }
+  button:hover{
+    -webkit-transform: scale(1.3);
+          -ms-transform: scale(1.3);
+          transform: scale(1.3);
+  }
+  
+  mat-card:hover{
+
+   animation:  animated bounceInLeft delay-2s;
+  }
+ 

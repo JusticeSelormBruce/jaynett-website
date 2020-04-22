@@ -1,0 +1,160 @@
+<div align="center" style="padding-top:20px;" fxHide.xs fxHide.sm="true"> 
+  
+
+  <h1 class="heading" fxHide.xs>CONTACT US</h1>
+  <h1 class="heading" fxShow.xs fxHide.gt-xs style="font-size:13pt;">CONTACT US</h1>
+  <hr>
+</div>
+
+<div class="top">
+  <div fxLayout="row" fxLayoutGap="30px" style="padding-left:50px;" fxHide.xs>
+    <mat-card>
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li> <a href="tel: +233 024 - 828 - 4049"> +233 024 - 828 - 4049</a> </li>
+
+          <br>
+          <li> <a href="tel: +233 020 - 767 - 8152"> +233 020 - 767 - 8152</a> </li>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li>Koforidua Technical University
+            <br>
+            P.O.BOX 981
+            <br>
+            Koforidua
+          </li>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li> <a href="mailto:  mail@jaynett.com"> mail@jaynett.com</a></li> <br>
+          <li> <a href="mailto:  info@jaynett.com"> info@jaynett.com</a></li>
+
+
+        </div>
+
+      </mat-card-content>
+
+    </mat-card>
+
+
+  </div>
+  <br>
+  <div fxLayout="row" fxLayoutGap="15px" fxHide.xs>
+    <h2>Get In Touch</h2>
+    <h1>|</h1>
+    <h5> If you have any questions, just fill in the contact form, and we will answer you shortly.</h5>
+  </div>
+  <div class="fill" fxHide.xs>
+
+    <div fxLayout="row" fxLayoutGap="20px">
+      <input type="text" placeholder="Your Name" required>
+      <input type="text" placeholder="E-mail" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+      <!-- <div class="container mt-4" style="width: 400px">
+        <div class="pd-telephone-input">
+          <input type="tel" class="form-control">
+        </div>
+      </div> -->
+
+    </div>
+    <br><br>
+    <div>
+      <textarea rows="8" placeholder="Message" required></textarea>
+    </div>
+    <div>
+      <button mat-riased-button>Send Message</button>
+    </div>
+
+  </div>
+  <div fxLayout="column" fxLayoutGap="15px" fxHide.gt-xs="true">
+    <mat-card class="dif">
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li> <a href="tel: +233 024 - 828 - 4049"> +233 024 - 828 - 4049</a> </li>
+
+          <br>
+          <li> <a href="tel: +233 020 - 767 - 8152"> +233 020 - 767 - 8152</a> </li>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="dif">
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li>Koforidua Technical University
+            <br>
+            P.O.BOX 981
+            <br>
+            Koforidua
+          </li>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="dif">
+
+      <mat-card-content>
+        <div align="center">
+          <p>`</p>
+          <br>
+          <li> <a href="mailto:  mail@jaynett.com"> mail@jaynett.com</a></li> <br>
+          <li> <a href="mailto:  info@jaynett.com"> info@jaynett.com</a></li>
+
+        </div>
+      </mat-card-content>
+    </mat-card>
+    <div>
+      <h2 class="hideh2" align="center">Get In Touch</h2>
+      <hr>
+
+      <h5 class="hideh5"> If you have any questions, just fill in the contact form, and we will answer you shortly.</h5>
+    </div>
+    <div class="fill1">
+      <form [formGroup]="contactForm">
+        <div fxLayout="column" fxLayoutGap="5px">
+          <input type="text" placeholder="Your Name" formControlName="name" class="fillinput" required>
+          <input type="email" placeholder="E-mail" formControlName="email" class="fillinput" required>
+          <input type="tel" placeholder="Phone" class="fillinput" formControlName="phone" required>
+          <div>
+            <select class="ui fluid dropdown">
+              <option class="item" data-value="af"><i class="af flag"></i>Afghanistan</option>
+              <option class="item" data-value="af"><i class="af flag"></i>Afghanistan</option>
+              <option class="item" data-value="af"><i class="af flag"></i>Afghanistan</option>
+            </select>
+          </div>
+
+          
+
+        </div>
+        <br>
+        <div>
+          <textarea rows="5" placeholder="Message" formControlName="message" required></textarea>
+        </div>
+        <div>
+          <button mat-riased-button  (click)="submitForm(contactForm)" class="btnfill mt-2">Send Message</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</div>

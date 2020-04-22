@@ -1,0 +1,37 @@
+<mat-toolbar>
+      <img [src]="ImgUrl"><strong>JAYNETT</strong>
+      <span fxFlex></span>
+      <div fxHide.gt-sm="true" fxShow.sm="true" fxShow.xs="true">
+        <mat-menu #appMenu="matMenu">
+          <a href="#home" mat-menu-item>Home</a>
+          <a href="#services" mat-menu-item>Services</a>
+          <a href="#Projects" mat-menu-item>Projects</a>
+          <a href="#team" mat-menu-item>Team</a>
+          <a href="" mat-menu-item>News</a>
+          <a href="#Contacts" mat-menu-item>Contacts</a>
+        </mat-menu>
+    
+        <button mat-icon-button [matMenuTriggerFor]="appMenu">
+          <mat-icon>dehaze</mat-icon>
+        </button>
+      </div>
+    
+      <div fxLayout="row" fxLayoutGap="35px" fxHide.xs="true" fxHide.sm="true">
+        <a routerLink="">Home</a>
+        <a routerLink="services">Services</a>
+        <a routerLink="projects">Projects</a>
+        <a routerLink="team">Team</a>
+        <a routerLink="news">News</a>
+        <a routerLink="contactus">Contacts</a>
+        <button mat-button [matMenuTriggerFor]="menu">
+          <mat-icon>share</mat-icon>
+        </button>
+        <mat-menu #menu="matMenu">
+          <button mat-menu-item>facebook</button>
+          <button mat-menu-item>Twitter</button>
+        </mat-menu>
+    
+      </div>
+    </mat-toolbar>
+    <div><br></div>
+<router-outlet></router-outlet>
